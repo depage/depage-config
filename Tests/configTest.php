@@ -1,5 +1,7 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
+
 require __DIR__ . "/../Config.php";
 
 class BaseClassWithDefaults
@@ -20,7 +22,7 @@ class ChildClassWithDefaults extends BaseClassWithDefaults
     ];
 }
 
-class configTest extends PHPUnit_Framework_TestCase
+class configTest extends TestCase
 {
     // {{{ setUp()
     /**
